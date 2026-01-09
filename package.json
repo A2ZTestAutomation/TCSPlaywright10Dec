@@ -1,0 +1,19 @@
+{
+  "name": "tcsplaywright10dec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ChkBoxtest": "npx playwright test ./tests/basicScripts/chkRadioDropdown.spec.ts",
+    "SaucDemoTest": "npx playwright test ./tests/POMScripts/SauceDemoTest.spec.ts",
+    "RetryTest": "npx playwright test --retries 2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3"
+  }
+}

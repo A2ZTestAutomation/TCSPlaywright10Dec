@@ -1,0 +1,178 @@
+{
+  "config": {
+    "configFile": "F:\\Anandhi\\workspace\\playwrightTSWS\\TCSPlaywright10Dec\\playwright.config.ts",
+    "rootDir": "F:/Anandhi/workspace/playwrightTSWS/TCSPlaywright10Dec/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "F:/Anandhi/workspace/playwrightTSWS/TCSPlaywright10Dec/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "F:/Anandhi/workspace/playwrightTSWS/TCSPlaywright10Dec/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "basicScripts\\chkRadioDropdown.spec.ts",
+      "file": "basicScripts/chkRadioDropdown.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Checkbox, Radio and Dropdown sample",
+          "file": "basicScripts/chkRadioDropdown.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CheckBox Test",
+              "ok": true,
+              "tags": [
+                "SmokeTest"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3512,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-02T07:01:58.938Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "F:\\Anandhi\\workspace\\playwrightTSWS\\TCSPlaywright10Dec\\test-results\\basicScripts-chkRadioDropd-e7ef6-opdown-sample-CheckBox-Test-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "F:\\Anandhi\\workspace\\playwrightTSWS\\TCSPlaywright10Dec\\test-results\\basicScripts-chkRadioDropd-e7ef6-opdown-sample-CheckBox-Test-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a8fb82adedddaacc5553-18c34ea911f95da9b69f",
+              "file": "basicScripts/chkRadioDropdown.spec.ts",
+              "line": 11,
+              "column": 10
+            },
+            {
+              "title": "Dropdown Test",
+              "ok": true,
+              "tags": [
+                "SmokeTest"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2925,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-02T07:02:02.844Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "F:\\Anandhi\\workspace\\playwrightTSWS\\TCSPlaywright10Dec\\test-results\\basicScripts-chkRadioDropd-9e3b1-opdown-sample-Dropdown-Test-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "F:\\Anandhi\\workspace\\playwrightTSWS\\TCSPlaywright10Dec\\test-results\\basicScripts-chkRadioDropd-9e3b1-opdown-sample-Dropdown-Test-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a8fb82adedddaacc5553-1f89f759a2b52fd55154",
+              "file": "basicScripts/chkRadioDropdown.spec.ts",
+              "line": 26,
+              "column": 10
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-02T07:01:58.092Z",
+    "duration": 8139.548999999999,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
