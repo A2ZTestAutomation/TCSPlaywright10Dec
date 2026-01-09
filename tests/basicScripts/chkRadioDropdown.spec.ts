@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 // test.describe.configure({
 //     mode: 'serial'
 // })
-test.describe('Checkbox, Radio and Dropdown sample', { tag: ['@SmokeTest'] }, () => {
+test.describe('Checkbox, Radio and Dropdown sample', () => {
     // test.describe.configure({ retries: 2 });
     test.beforeEach('Launch App', async ({ page }) => {
         await page.goto('https://testautomationpractice.blogspot.com/')
@@ -10,7 +10,7 @@ test.describe('Checkbox, Radio and Dropdown sample', { tag: ['@SmokeTest'] }, ()
         // await page.goto('/')
     })
 
-    test.only('CheckBox Test', async ({ page }) => {
+    test('CheckBox Test', async ({ page }) => {
         await page.getByRole('checkbox', { name: 'Sunday' }).check()
         await page.getByRole('checkbox', { name: 'Monday' }).check()
         const dayThree = page.getByRole('checkbox', { name: 'Tuesday' })
@@ -25,7 +25,7 @@ test.describe('Checkbox, Radio and Dropdown sample', { tag: ['@SmokeTest'] }, ()
     test('RadioButton Test', async ({ page }) => {
         await page.getByLabel('Male', { exact: true }).check()
     })
-    test.only('Dropdown Test', async ({ page }) => {
+    test('Dropdown Test', async ({ page }) => {
         // test.slow()
         const dropdown = page.locator('#country')
         await dropdown.scrollIntoViewIfNeeded()
